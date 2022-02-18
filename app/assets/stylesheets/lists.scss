@@ -18,6 +18,10 @@
   }
 }
 
+.display {
+  padding: 48px;
+}
+
 
 .movie-card {
   display: flex;
@@ -41,5 +45,19 @@
   .top-card {
     display: flex;
     justify-content: space-between;
+  }
+}
+
+.list-frame {
+  display: flex;
+  .comments {
+    // border: 1px solid salmon;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    h4{
+      font-size: 24px;
+    }
   }
 }
