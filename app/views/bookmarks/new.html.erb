@@ -1,0 +1,7 @@
+<div class="bookmark_form">
+  <%= simple_form_for [@list, @bookmark] do |f| %>
+    <%= f.input :comment, placeholder: 'Enter a comment about the movie' %>
+    <%= f.association :movie, prompt: 'Select a movie' %>
+    <%= f.submit class: 'btn btn-success' %>
+  <% end %>
+</div>

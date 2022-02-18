@@ -17,3 +17,29 @@
     color: rgba(230,230,230,0.7)
   }
 }
+
+
+.movie-card {
+  display: flex;
+  width: 400px;
+  margin-bottom: 16px;
+  background-color: rgba(237, 241, 194, 1);
+  border-radius: 4px;
+  box-shadow: 1px 1px 2px #ccc;
+  .poster {
+    height: 150px;
+   display: flex;
+   align-content: center;
+  }
+}
+
+.movie-infos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 8px;
+  .top-card {
+    display: flex;
+    justify-content: space-between;
+  }
+}
