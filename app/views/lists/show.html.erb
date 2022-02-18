@@ -1,18 +1,17 @@
 
 <h1><%= @list.name %></h1>
 
-<%= link_to 'Back to all lists', lists_path, class: 'btn btn-success' %>
-<%= link_to 'Add a movie', new_list_bookmark_path(@list), class: 'btn btn-success' %>
+<%= link_to 'Add a movie', new_list_bookmark_path(@list), class: 'btn btn-body-color text-white' %>
 
-<% @list.movies.each do |movie| %>
-  <div class="list-frame">
+<div class="list-frame">
+  <% @list.movies.each do |movie| %>
     <div class="movie-list">
       <% bookmark = Bookmark.find_by(list: @list, movie: movie) %>
       <div class="movie-card">
         <%= image_tag movie.poster_url, alt: "Le Wagon", class: 'poster' %>
         <div class="movie-infos">
           <div class="top-card">
-            <h3><%= movie.title %></h3>
+            <h4><%= movie.title %></h4>
             <p><%= movie.rating %></p>
           </div>
           <p><%= movie.overview %></p> 
@@ -26,5 +25,5 @@
         <%= link_to 'Delete a movie', bookmark_path(bookmark), method: :delete, data: { confirm: "Are you sure you want to remove #{movie.title} from your #{@list.name} list"}, class: 'text-danger'%> 
       </small>
     </div>
-  </div>
-<% end %>
+  <% end %>
+</div>

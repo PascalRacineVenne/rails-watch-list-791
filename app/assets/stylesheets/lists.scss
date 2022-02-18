@@ -25,15 +25,19 @@
 
 .movie-card {
   display: flex;
-  width: 400px;
+  flex-direction: column;
+  width: 150px;
   margin-bottom: 16px;
-  background-color: rgba(237, 241, 194, 1);
+  background-color: white;
   border-radius: 4px;
   box-shadow: 1px 1px 2px #ccc;
+  min-height: 440px;
   .poster {
-    height: 150px;
-   display: flex;
-   align-content: center;
+    display: flex;
+    align-content: center;
+    // height: 150px;
+    max-width: 100%;
+    object-fit: contain;
   }
 }
 
@@ -42,16 +46,21 @@
   flex-direction: column;
   justify-content: space-around;
   padding: 8px;
+  p {
+    color: #222;
+  }
   .top-card {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    h4, p {
+      color: #222;
+    }
   }
 }
 
 .list-frame {
   display: flex;
   .comments {
-    // border: 1px solid salmon;
     width: 400px;
     display: flex;
     flex-direction: column;
