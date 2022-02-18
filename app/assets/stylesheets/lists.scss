@@ -1,3 +1,19 @@
 // Place all the styles related to the lists controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+.banner {
+  // background-image: image-url('movie.jpg');
+  background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), image-url('movie.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  text-align: center;
+  padding: 150px;
+  h1 {
+    color: rgb(230,230,230)
+  }
+
+  p {
+    color: rgba(230,230,230,0.7)
+  }
+}
