@@ -1,1 +1,28 @@
 // Specific CSS for your home-page
+.movie-list {
+  width: 800px;
+  margin: 0 auto;
+  ul {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+}
+
+.list {
+  height: 150px;
+  width: 200px;
+  margin: 8px;
+  background-color: #000000;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  .trash {
+    position: absolute;
+    left: 175px;
+    top: 120px;
+    color: rgba(255, 255, 255, 0.5)
+  }
+}
