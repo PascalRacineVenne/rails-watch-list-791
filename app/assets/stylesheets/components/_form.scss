@@ -1,0 +1,16 @@
+.form-list {
+  background: white;
+  padding: 12px, 24px;
+  margin-top: 24px;
+  border-radius: 4px;
+  box-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+  .input_form {
+    border-radius: 12px;
+  }
+  .btn {
+    width: 100%;
+  }
+  .btn:hover {
+    opacity: 0.2;
+  }
+}

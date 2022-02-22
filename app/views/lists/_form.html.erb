@@ -1,4 +1,12 @@
-<%= simple_form_for @list do |f| %>
-  <%= f.input :name, placeholder: 'sci-fi' %>
-  <%= f.submit "Create a movie list", class: "btn btn-success" %>
-<% end %>
+<div class="container">
+  <div class="row">
+    <div class="col-12 col-sm-4">
+      <div class="form_list">
+        <%= simple_form_for @list do |f| %>
+          <%= f.input :name, placeholder: 'sci-fi', class: "input_form" %>
+          <%= f.submit "Create a movie list", class: "btn btn-info" %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

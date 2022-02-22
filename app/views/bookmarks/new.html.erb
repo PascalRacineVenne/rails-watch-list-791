@@ -1,7 +1,13 @@
-<div class="bookmark_form">
-  <%= simple_form_for [@list, @bookmark] do |f| %>
-    <%= f.input :comment, placeholder: 'Enter a comment about the movie' %>
-    <%= f.association :movie, prompt: 'Select a movie' %>
-    <%= f.submit class: 'btn btn-success' %>
-  <% end %>
+<div class="container">
+  <div class="row">
+    <div class="col-12 col-sm-4">
+      <div class="form_list">
+        <%= simple_form_for [@list, @bookmark] do |f| %>
+          <%= f.input :comment, placeholder: 'Enter a comment about the movie' %>
+          <%= f.association :movie, prompt: 'Select a movie' %>
+          <%= f.submit class: 'btn btn-info' %>
+        <% end %>
+      </div>
+    </div>
+  </div>
 </div>
